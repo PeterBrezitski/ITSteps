@@ -1,0 +1,182 @@
+/* Imported Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
+/* Global */
+
+* {
+  user-select: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f2e5d9;
+  font-family: 'Capriola', Verdana, sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Logo and Navigation */
+
+header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30%;
+}
+
+.logo img {
+  height: 70px;
+  width: 120px;
+}
+
+nav {
+  width: 70%;
+  text-align: right;
+}
+
+.nav-menu li {
+  list-style: none;
+  display: inline;
+  text-transform: uppercase;
+}
+
+.nav-menu li a{
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.nav-menu li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #262322;
+}
+
+.nav-menu li a:visited {
+  color: #262322;
+}
+
+.nav-menu li a:hover {
+  color: #dbcbbe !important;
+}
+
+.nav-menu li a:active {
+  color: #dbcbbe;
+}
+
+.nav-menu .nav-btn {
+  border: 2px solid #e5d6c9;
+  background-color: #e5d6c9;
+  border-radius: 30px;
+  padding: 15px 20px;
+  color:
+}
+
+.nav-menu .nav-btn:hover {
+  color: #262322 !important;
+  border: 2px solid #dbcbbe;
+  background-color: #dbcbbe;
+}
+
+/* Section */
+
+section {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.sec-info {
+  width: 50%;
+}
+
+.sec-info h1 {
+  font-size: 36px;
+}
+
+.sec-info p {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.sec-info .sec-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #e5d6c9;
+  background-color: #e5d6c9;
+  border-radius: 30px;
+  padding: 15px 20px;
+}
+
+.sec-info .sec-btn:hover {
+  border: 2px solid #dbcbbe;
+  background-color: #dbcbbe;
+  color: #262322 !important;
+}
+
+.sec-info .sec-btn:visited {
+  color: #262322 !important;
+}
+
+.sec-img {
+  width: 50%;
+}
+
+.sec-img img {
+  mix-blend-mode: darken;
+  width: 600px;
+  height: 450px;
+  border-radius: 3%;
+  padding-left: 20px;
+}
+
+/* Info Panel */
+
+.info {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.info ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.items li {
+  list-style: none;
+  font-size: 15px;
+}
+
+.items #fb {
+  width: 130px;
+  height: 40px;
+}
+
+.items #google {
+  width: 110px;
+  height: 80px;
+}
+
+.items #forbes {
+  width: 80px;
+  height: 80px;
+}
+
+.items #inc {
+  width: 60px;
+  height: 50px;
+  text-align: center;
+}
+
+.items p {
+  margin-top: 4px;
+}
