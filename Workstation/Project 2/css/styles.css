@@ -1,4 +1,7 @@
+/* Global */
+
 * {
+  user-select: none;
   margin: 0;
   padding: 0;
 }
@@ -10,17 +13,22 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Arial, sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
+/* Container */
+
 .container {
   width: 75%;
   margin: 0 auto;
   margin-top: 150px;
 }
+
+/* Header */
 
 header {
   background: linear-gradient(90deg, rgba(75,24,12,0.95) 0%, rgba(237,190,113,0.95) 100%);
@@ -30,16 +38,14 @@ header {
   padding-top: 15px;
 }
 
-.logo {
-}
-
 .logo img {
   margin-left: 80px;
   width: 160px;
   height: 50px;
 }
 
-.nav-menu {
+.logo img {
+  cursor: pointer;
 }
 
 .nav-menu img {
@@ -47,6 +53,12 @@ header {
   width: 30px;
   height: 30px;
 }
+
+.nav-menu img:hover {
+  cursor: pointer;
+}
+
+/* Section 1 */
 
 .sec-1 {
   background: linear-gradient(90deg, rgba(75,24,12,0.95) 0%, rgba(237,190,113,0.95) 100%);
@@ -66,6 +78,7 @@ header {
   margin-top: 10px;
   margin-bottom: 40px;
   font-size: 48px;
+  letter-spacing: 1.5px;
 }
 
 .content .btn {
@@ -87,14 +100,83 @@ header {
   color: white;
 }
 
+/* Section 2 */
+
 .sec-2 {
   background: white;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.sec-2 h1 {
+.sec-2 h2 {
   margin-bottom: 20px;
+}
+
+.content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.content-2 img {
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  margin-right: 50px;
+  padding: 9px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}
+
+.content-2 p {
+  width: 250px;
+}
+
+/* Section 3 */
+
+.sec-3 {
+  background: linear-gradient(90deg, rgba(75,24,12,0.95) 0%, rgba(237,190,113,0.95) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.content-3 h3 {
+  margin-top: 100px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+.content-3 p {
+  color: white;
+  text-align: center;
+}
+
+.images {
+  margin-top: 80px;
+}
+
+.images ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.images li {
+  list-style: none;
+}
+
+.images img {
+  width: 255px;
+  height: 160px;
 }
