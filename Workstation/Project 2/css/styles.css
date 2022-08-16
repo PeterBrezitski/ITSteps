@@ -128,7 +128,6 @@ header {
 .content-2 {
   display: flex;
   justify-content: center;
-  align-items: baseline;
   padding-right: 20px;
   padding-left: 20px;
 }
