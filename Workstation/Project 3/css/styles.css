@@ -5,6 +5,8 @@
   user-select: none;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +26,7 @@ a, li {
   border-radius: 30px;
   padding: 8px 20px;
   margin-top: 20px;
+  color: white;
 }
 
 .btn:visited {
@@ -62,7 +65,7 @@ header {
 .mini-nav img {
   width: 20px;
   height: 20px;
-  padding-left: 12px;
+  margin-left: 12px;
 }
 
 #social-nav {
@@ -96,10 +99,15 @@ nav ul li {
   padding-left: 30px;
   padding-right: 30px;
   letter-spacing: 1.5px;
+  transition: all 2s;
 }
 
 nav ul li a {
   color: white;
+}
+
+nav ul li:hover {
+  font-size: 15px;
 }
 
 nav ul li a:visited {
@@ -132,7 +140,7 @@ section {
 .image img {
   width: 900px;
   height: 600px;
-  padding-right: 400px;
+  margin-right: 400px;
 }
 
 /* Section 1 -> Info & Button */
@@ -158,7 +166,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 100vh;
 }
 
 .best-seller h1 {
@@ -167,20 +175,34 @@ section {
 
 .slogan {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.slogan-img {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.slogan img {
+.slogan-img img {
   width: 500px;
   height: 500px;
 }
 
-.slogan p {
-  letter-spacing: 1.5px;
+.slogan-info {
+  text-align: center;
+}
+
+.slogan-info p {
+  padding-top: 30px;
+  letter-spacing: 3px;
 }
 
 /* Products */
+
 .products {
   display: flex;
   flex-direction: column;
@@ -218,12 +240,98 @@ section {
   margin-top: 10px;
 }
 
-.products .cart-btn {
-  border: 1px solid white;
-  border-radius: 30px;
-  padding: 8px 20px;
-  margin-top: 20px;
+/* Test Product Section
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+.products h1 {
+  margin-bottom: 150px;
+}
+
+.product-items {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.item:hover {
+  transform: translateY(20px);
+}
+
+.item:hover:before {
+  opacity: 1;
+}
+
+.item:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.item img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+
+.item .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+.item .info h1 {
+  margin: 0px;
+}
+
+.item .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.item .info a {
+  margin-top: 20px;
+} */
 
 /* Contact Us */
 
@@ -245,6 +353,8 @@ section {
   margin-bottom: 30px;
 }
 
+/* Contact Form */
+
 form {
   display: flex;
   flex-direction: column;
@@ -253,22 +363,64 @@ form {
   gap: 20px;
 }
 
+form .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+form .name input {
+  width: 200px;
+}
+
 form input {
-  width: 300px;
-  height: 15px;
+  width: 410px;
+  height: 30px;
   padding: 10px;
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 10px;
   border-shadow: none;
   background-color: white;
 
 }
 
 form .message {
-  width: 300px;
+  width: 410px;
   height: 100px;
 }
 
 form input:focus {
   outline: none !important;
+}
+
+/* Back to top button */
+
+.bck-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 60px;
+  display: none;
+  transition: top ease 0.1s;
+}
+
+.bck-top:before {
+  content: url("../assets/icons8-scroll-up-50.png");
+  width: 400px;
+}
+
+.bck-top:hover {
+  transition: all 2s;
+  bottom: 10px;
+
+}
+
+/* Footer */
+
+footer p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 4px
 }

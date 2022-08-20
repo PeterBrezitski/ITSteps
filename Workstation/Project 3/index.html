@@ -6,6 +6,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dividers.css">
 
     <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +14,6 @@
 
     <!-- ICO -->
     <link rel="icon" type="image/x-icon" href="assets/cream.png">
-
-    <!-- Custom Scripts -->
 
   </head>
   <body>
@@ -29,13 +28,13 @@
           </ul>
         </div>
         <div class="logo">
-          <img src="assets/web0logo.png" alt="Logo">
+          <img src="assets/web0logo.png" alt="Jaxon Lane Logo">
         </div>
         <div class="mini-nav">
           <ul id="shop-nav">
             <li><a href="#"><img src="assets/search.png" alt="Search Icon"></a></li>
             <li><a href="#"><img src="assets/shopping-cart.png" alt="Shopping Cart Icon"></a></li>
-            <li><a href="#"><img src="assets/human.png" alt="Profile Icon"></a></li>
+            <li><a href="#"><img src="assets/user.png" alt="Profile Icon"></a></li>
           </ul>
         </div>
       </header>
@@ -43,9 +42,9 @@
       <nav>
         <ul>
           <li><a href="#">Men Skincare</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Shop Now</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a href="#best-seller">About Us</a></li>
+          <li><a href="#products">Shop Now</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
       </nav>
 
@@ -65,35 +64,50 @@
         </div>
       </section>
 
-      <section class="best-seller">
+      <div class="h-divider">
+        <div class="shadow"></div>
+      </div>
+
+      <section id="best-seller" class="best-seller">
         <h1>Our best seller</h1>
-        <div class="slogan">
-          <img src="assets/BroMaskSingles_UpdatedSept-1.png" alt="">
-          <p>– <strong>Bro Mask</strong> – 100% Skincare for all skin types: <strong>Apply now!</strong></p>
-        </div>
+          <div class="slogan">
+            <div class="slogan-img">
+              <img src="assets/BroMaskSingles_UpdatedSept-1.png" alt="Bro Mask Product Picture">
+            </div>
+            <div class="slogan-info">
+              <p><strong>- Bro Mask -</strong></p>
+              <p>100% Skincare   for all skin types.</p>
+              <p class="underlined"><strong>Apply now!</strong></p>
+              <div class="h-divider2">
+                <div class="shadow"></div>
+              </div>
+            </div>
+          </div>
       </section>
+
+      <hr id="seven" data-symbol="JAXON LANE">
 
       <section class="products">
         <h1>Our Products</h1>
         <div class="product-items">
           <ul>
             <li>
-              <img src="assets/73cffe5faccf6ca51373fd3e1141b62a1abdd25df4875e1faa514b398d4bd680.png" alt="">
+              <img src="assets/73cffe5faccf6ca51373fd3e1141b62a1abdd25df4875e1faa514b398d4bd680.png" alt="Relax and Repair Product Picture">
               <p>Relax and Repair kit</p>
               <a class="btn" href="#">Add to cart</a>
             </li>
             <li>
-              <img src="assets/art-jaxon_lane_shake_wake_all_in_one_face_wash.png" alt="">
+              <img src="assets/art-jaxon_lane_shake_wake_all_in_one_face_wash.png" alt="Shake and Wake Product Picture">
               <p>Shake and wake</p>
               <a class="btn" href="#">Add to cart</a>
             </li>
             <li>
-              <img src="assets/BroMaskSingles_UpdatedSept2021_-whitebackground-smallfile_1024x.png" alt="">
+              <img src="assets/BroMaskSingles_UpdatedSept2021_-whitebackground-smallfile_1024x.png" alt="Bro Mask Product Picture">
               <p>Bro Mask</p>
               <a class="btn" href="#">Add to cart</a>
             </li>
             <li>
-              <img src="assets/jaxon-lane-winter-skincare-set.png" alt="">
+              <img src="assets/jaxon-lane-winter-skincare-set.png" alt="Bro Relax Combo Product Picture">
               <p>Bro Relax Combo</p>
               <a class="btn" href="#">Add to cart</a>
             </li>
@@ -101,25 +115,79 @@
         </div>
       </section>
 
+      <!--<section id="products" class="products">
+        <h1>Our Products</h1>
+        <div class="product-items">
+          <div class="item">
+            <img src="assets/73cffe5faccf6ca51373fd3e1141b62a1abdd25df4875e1faa514b398d4bd680.png" alt="Relax and Repair Product Picture">
+            <div class="info">
+                <h1>Relax and Repair kit</h1>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="item">
+              <img src="assets/art-jaxon_lane_shake_wake_all_in_one_face_wash.png" alt="Shake and Wake Product Picture">
+              <div class="info">
+                  <h1>Shake and wake</h1>
+                  <a href="#" class="btn">Add to Cart</a>
+              </div>
+            <div class="item">
+                <img src="assets/BroMaskSingles_UpdatedSept2021_-whitebackground-smallfile_1024x.png" alt="Bro Mask Product Picture">
+                <div class="info">
+                    <h1>Bro Mask</h1>
+                    <a href="#" class="btn">Add to Cart</a>
+            </div>
+            <div class="item">
+              <img src="assets/jaxon-lane-winter-skincare-set.png" alt="Bro Relax Combo Product Picture">
+              <div class="info">
+                <h1>Bro Relax Combo</h1>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </section>-->
+
+      <div class="h-divider">
+        <div class="shadow"></div>
+      </div>
+
+
       <section class="contact">
-        <h1>Contact us</h1>
+        <h1 id="contact">Contact us</h1>
         <div>
           <form autocomplete="off" action="index.html" method="post">
-            <label for="name">Your Name</label>
-            <input type="text" class="inp" name="name" placeholder="Your name.." required validate>
-
-            <label for="phone-number">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email.." required validate>
-
-            <label for="fname">Phone Number (Optional)</label>
-            <input type="text" id="fname" name="firstname" placeholder="Phone Number.." required validate>
-
-            <label for="message">Message</label>
+            <div class="name">
+              <input type="text" name="name" placeholder="First Name" required validate>
+              <input type="text" name="email" placeholder="Last Name" required validate>
+            </div>
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="phone" placeholder="Phone Number" required validate>
             <input class="message" name="message"  placeholder="Message"></input>
 
             <a class="btn" href="#">Send us an inquiry</a>
           </form>
         </div>
       </section>
+
+      <a id="btn" class="bck-top" href="#"></a>
+
+      <footer>
+        <p>by Brezitski</p>
+      </footer>
+
     </div>
   </body>
+
+  <script type="text/javascript">
+    var mybutton = document.getElementById("btn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+    }
+  </script>
+</html>
