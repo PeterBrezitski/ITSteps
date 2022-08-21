@@ -69,7 +69,7 @@ header {
 }
 
 #social-nav {
-  margin-left: 20px;
+  margin-left: 24px;
 }
 
 #shop-nav {
@@ -77,8 +77,8 @@ header {
 }
 
 .logo img {
-  height: 40px;
-  width: 200px;
+  height: 70px;
+  width: 240px;
 }
 
 /* Main Navigation */
@@ -150,6 +150,7 @@ section {
 }
 
 .info h1 {
+  letter-spacing: 1.5px;
 }
 
 .info p {
@@ -171,6 +172,7 @@ section {
 
 .best-seller h1 {
   margin-bottom: 100px;
+  letter-spacing: 1.5px;
 }
 
 .slogan {
@@ -190,6 +192,7 @@ section {
 .slogan-img img {
   width: 500px;
   height: 500px;
+  margin: 0 auto;
 }
 
 .slogan-info {
@@ -406,7 +409,7 @@ form input:focus {
 }
 
 .bck-top:before {
-  content: url("../assets/icons8-scroll-up-50.png");
+  content: url("../assets/icons/icons8-scroll-up-50.png");
   width: 400px;
 }
 
