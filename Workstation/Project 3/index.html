@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/dividers.css">
 
     <!-- Meta Tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 
     <!-- ICO -->
@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="navigation">
         <div class="mini-nav">
           <ul id="social-nav">
             <li><a href="#"><img src="assets/icons/instagram.png" alt="Instagram Icon"></a></li>
@@ -28,7 +28,7 @@
           </ul>
         </div>
         <div class="logo">
-          <img src="assets/LOGO.png" alt="Jaxon Lane Logo">
+          <img src="assets/images/LOGO.png" alt="Jaxon Lane Logo">
         </div>
         <div class="mini-nav">
           <ul id="shop-nav">
@@ -39,9 +39,18 @@
         </div>
       </header>
 
+      <header class="nav-mobile">
+        <div class="logo-mobile">
+          <img src="assets/images/LogoMakr-7T1hcq.png" alt="Jaxon Lane Mobile Logo">
+        </div>
+        <div class="nav-icon">
+          <img src="assets/icons/bar.png" alt="Hamburger Menu Icon">
+        </div>
+      </header>
+
       <nav>
         <ul>
-          <li><a href="#">Men Skincare</a></li>
+          <li><a href="men-skincare.html">Men Skincare</a></li>
           <li><a href="#best-seller">About Us</a></li>
           <li><a href="#products">Shop Now</a></li>
           <li><a href="#contact">Contact us</a></li>
@@ -50,7 +59,8 @@
 
       <section class="sec-1">
         <div class="image">
-          <img src="assets/section-image.png" alt="Attractive  pensive young man looks into distance stroking his beard on black background">
+          <img class="desktop" src="assets/images/section-image.png" alt="Attractive  pensive young man looks into distance stroking his beard on black background">
+          <img class="mobile" src="assets/images/section-image2.jpeg" alt="2">
         </div>
         <div class="info">
           <h1>Who we are:</h1>
@@ -72,7 +82,7 @@
         <h1>Our best seller</h1>
           <div class="slogan">
             <div class="slogan-img">
-              <img src="assets/BroMaskSingles_UpdatedSept-1.png" alt="Bro Mask Product Picture">
+              <img src="assets/images/BroMaskSingles_UpdatedSept-1.png" alt="Bro Mask Product Picture">
             </div>
             <div class="slogan-info">
               <p><strong>- Bro Mask -</strong></p>
@@ -94,22 +104,22 @@
         <div class="product-items">
           <ul>
             <li>
-              <img src="assets/73cffe5faccf6ca51373fd3e1141b62a1abdd25df4875e1faa514b398d4bd680.png" alt="Relax and Repair Product Picture">
+              <img src="assets/images/73cffe5faccf6ca51373fd3e1141b62a1abdd25df4875e1faa514b398d4bd680.png" alt="Relax and Repair Product Picture">
               <p>Relax and Repair kit</p>
               <a class="btn" href="#">Add to cart</a>
             </li>
             <li>
-              <img src="assets/art-jaxon_lane_shake_wake_all_in_one_face_wash.png" alt="Shake and Wake Product Picture">
+              <img src="assets/images/art-jaxon_lane_shake_wake_all_in_one_face_wash.png" alt="Shake and Wake Product Picture">
               <p>Shake and wake</p>
               <a class="btn" href="#">Add to cart</a>
             </li>
             <li>
-              <img src="assets/BroMaskSingles_UpdatedSept2021_-whitebackground-smallfile_1024x.png" alt="Bro Mask Product Picture">
+              <img src="assets/images/BroMaskSingles_UpdatedSept2021_-whitebackground-smallfile_1024x.png" alt="Bro Mask Product Picture">
               <p>Bro Mask</p>
               <a class="btn" href="#">Add to cart</a>
             </li>
             <li>
-              <img src="assets/jaxon-lane-winter-skincare-set.png" alt="Bro Relax Combo Product Picture">
+              <img src="assets/images/jaxon-lane-winter-skincare-set.png" alt="Bro Relax Combo Product Picture">
               <p>Bro Relax Combo</p>
               <a class="btn" href="#">Add to cart</a>
             </li>
@@ -156,7 +166,7 @@
       <section class="contact">
         <h1 id="contact">Contact us</h1>
         <div>
-          <form autocomplete="off" action="index.html" method="post">
+          <form id="form1" autocomplete="off" action="index.html" method="post">
             <div class="name">
               <input type="text" name="name" placeholder="First Name" required validate>
               <input type="text" name="email" placeholder="Last Name" required validate>
@@ -165,7 +175,7 @@
             <input type="text" name="phone" placeholder="Phone Number" required validate>
             <input class="message" name="message"  placeholder="Message"></input>
 
-            <a class="btn" href="#">Send us an inquiry</a>
+            <a form="form1" type="submit" class="btn">Send us an inquiry</a>
           </form>
         </div>
       </section>

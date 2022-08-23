@@ -51,7 +51,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 2vw;
 }
 
 /* Social, Logo & Shop Navigation */
@@ -65,7 +65,7 @@ header {
 .mini-nav img {
   width: 20px;
   height: 20px;
-  margin-left: 12px;
+  margin-left: 1vw;
 }
 
 #social-nav {
@@ -99,7 +99,7 @@ nav ul li {
   padding-left: 30px;
   padding-right: 30px;
   letter-spacing: 1.5px;
-  transition: all 2s;
+  transition: all 1s;
 }
 
 nav ul li a {
@@ -118,6 +118,13 @@ nav ul li a:hover {
   color: white;
   border-bottom: 2px solid white;
 }
+
+/* Mobile Navigation */
+
+.nav-mobile {
+  display: none;
+}
+
 /* Section 1 */
 
 section {
@@ -156,8 +163,12 @@ section {
 .info p {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 600px;
+  max-width: 600px;
   letter-spacing: 1.5px;
+}
+
+section .mobile {
+  display: none;
 }
 
 /* Best Seller */
@@ -345,6 +356,7 @@ section {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .contact h1 {
@@ -397,6 +409,32 @@ form input:focus {
   outline: none !important;
 }
 
+form .btn-form {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin-top: 44px;
+  background-color: black;
+  color: white;
+}
+
+form .btn-form {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 8px 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+form .btn-form:visited {
+  color: white;
+}
+
+form .btn-form:hover {
+  background-color: white;
+  color: black;
+}
+
 /* Back to top button */
 
 .bck-top {
@@ -405,16 +443,15 @@ form input:focus {
   right: 0;
   margin: 60px;
   display: none;
-  transition: top ease 0.1s;
+  transition: all 1s;
 }
 
 .bck-top:before {
-  content: url("../assets/icons/icons8-scroll-up-50.png");
-  width: 400px;
+  content: url("../assets/icons/iconmonstr-angel-up-circle-thin-48.png");
+  width: 300px;
 }
 
 .bck-top:hover {
-  transition: all 2s;
   bottom: 10px;
 
 }
@@ -426,4 +463,119 @@ footer p {
   margin-bottom: 20px;
   font-size: 14px;
   letter-spacing: 4px
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 1024px) {
+
+  .navigation {
+    display: none;
+  }
+
+  .nav-mobile {
+    background-color: black;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-mobile .logo-mobile img{
+    width: 150px;
+    height: 30px;
+  }
+
+  .nav-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .sec-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec-1 .image {
+
+  }
+
+  section .desktop {
+    display: none;
+  }
+
+  section .mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+  }
+
+  section .info {
+    margin-top: 50px;
+    width: auto;
+    text-align: center;
+  }
+
+  .slogan {
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slogan img {
+   max-width: 300px;
+   max-height: 300px;
+  }
+
+  .products {
+    height: 210vh;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  form .name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form .name input {
+    width: 300px;
+  }
+
+  form input {
+    max-width: 300px;
+  }
+
+
+  /* Back to top button */
+
+  .bck-top {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+@media screen and (max-width: 480) {
+
+  section .mobile {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    padding-right: 50px;
+    margin: 0 auto;
+  }
+
 }
