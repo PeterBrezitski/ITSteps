@@ -13,7 +13,7 @@ body {
   background: black;
   color: white;
   font-family: Montserrat, serif;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.14em;
 }
 
 a, li {
@@ -24,8 +24,8 @@ a, li {
 .btn {
   border: 1px solid white;
   border-radius: 30px;
-  padding: 8px 20px;
-  margin-top: 20px;
+  padding: 0.6em 1.2em;
+  margin-top: 2em;
   color: white;
 }
 
@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 /* Mobile Navigation */
 
-.nav-mobile {
+.mobile-nav {
   display: none;
 }
 
@@ -145,9 +145,9 @@ section {
 }
 
 .image img {
-  width: 900px;
-  height: 600px;
-  margin-right: 400px;
+  width: 56.25rem;
+  height: 37.5rem;
+  margin-right: 25rem;
 }
 
 /* Section 1 -> Info & Button */
@@ -391,8 +391,8 @@ form .name input {
 
 form input {
   width: 410px;
-  height: 30px;
-  padding: 10px;
+  height: 2.2rem;
+  padding: 0.6rem;
   border: 1px solid white;
   border-radius: 10px;
   border-shadow: none;
@@ -466,36 +466,79 @@ footer p {
 }
 
 
-/* Responsive Design */
+/*  --- RESPONSINVE PART --- */
 
 @media screen and (max-width: 1024px) {
+
+
+/* --- Navigation Menu --- */
 
   .navigation {
     display: none;
   }
 
-  .nav-mobile {
-    background-color: black;
-    position: sticky;
+  nav {
+    display: none;
+  }
+
+  .mobile-nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .mobile-images {
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .nav-mobile .logo-mobile img{
+  .mobile-logo img {
     width: 150px;
-    height: 30px;
+    height: 42px;
   }
 
-  .nav-icon img {
+  .mobile-icon img {
     width: 32px;
     height: 32px;
   }
 
-  nav {
-    display: none;
+  .mobile-icon img:hover {
+    cursor: pointer;
   }
+
+  .mobile-menu {
+    display: none;
+    text-align: center;
+    list-style: none;
+    color: white;
+    width: 100%;
+  }
+
+  #menu {
+    transition: all 2s ease;
+  }
+
+  .mobile-menu li {
+    padding: 10px;
+  }
+
+  .mobile-menu li a {
+    text-decoration: none;
+  }
+
+  .mobile-menu li a:visited {
+    color: white;
+  }
+
+  .mobile-menu li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+  }
+
+
+
+  /* --- Section 1 --- */
 
   .sec-1 {
     display: flex;
@@ -562,8 +605,7 @@ footer p {
   /* Back to top button */
 
   .bck-top {
-    width: 10px;
-    height: 10px;
+    display: none !important;
   }
 }
 

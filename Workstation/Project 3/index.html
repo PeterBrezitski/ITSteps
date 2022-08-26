@@ -6,18 +6,27 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/dividers.css">
+    <link rel="stylesheet" href="css/copied.css">
 
     <!-- Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 
     <!-- ICO -->
-    <link rel="icon" type="image/x-icon" href="assets/cream.png">
+    <link rel="icon" type="image/x-icon" href="assets/icons/cream.png">
 
   </head>
   <body>
+
+    <!-- Container. Why? Because it looks cooler.-->
+
     <div class="container">
+
+      
+    <div id="loader" class="loader"></div>
+
+    <!-- Header for Social, logo and Mini Navigation -->
+
       <header class="navigation">
         <div class="mini-nav">
           <ul id="social-nav">
@@ -39,14 +48,32 @@
         </div>
       </header>
 
-      <header class="nav-mobile">
-        <div class="logo-mobile">
-          <img src="assets/images/LogoMakr-7T1hcq.png" alt="Jaxon Lane Mobile Logo">
-        </div>
-        <div class="nav-icon">
-          <img src="assets/icons/bar.png" alt="Hamburger Menu Icon">
-        </div>
+      <!-- Header that contains the mobile Navigation -->
+
+      <header class="mobile-nav">
+          <div class="mobile-images">
+            <div class="mobile-logo">
+              <img src="assets/images/LogoMakr-7T1hcq.png" alt="Jaxon Lane Mobile Logo">
+            </div>
+            <div class="mobile-icon">
+              <button class="menu" onclick="toggle(); this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <svg width="42" height="42" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <ul class="mobile-menu" id="menu">
+            <li><a href="men-skincare.html" onclick="toggleOff()">Men Skincare</a></li>
+            <li><a href="#best-seller" onclick="toggleOff()">About us</a></li>
+            <li><a href="#products" onclick="toggleOff()">Shop Now</a></li>
+            <li><a href="#contact" onclick="toggleOff()">Contact us</a></li>
+          <ul>
       </header>
+
+      <!-- Navigation Menu under the Header -->
 
       <nav>
         <ul>
@@ -56,6 +83,8 @@
           <li><a href="#contact">Contact us</a></li>
         </ul>
       </nav>
+
+      <!-- First Section -->
 
       <section class="sec-1">
         <div class="image">
@@ -74,9 +103,13 @@
         </div>
       </section>
 
+      <!-- Divider -->
+
       <div class="h-divider">
         <div class="shadow"></div>
       </div>
+
+      <!-- Second Section -->
 
       <section id="best-seller" class="best-seller">
         <h1>Our best seller</h1>
@@ -95,9 +128,13 @@
           </div>
       </section>
 
+      <!-- Divider -->
+
       <div class="h-divider">
         <div class="shadow"></div>
       </div>
+
+      <!-- Product Section -->
 
       <section class="products">
         <h1>Our Products</h1>
@@ -127,7 +164,9 @@
         </div>
       </section>
 
-      <!--<section id="products" class="products">
+      <!-- Testing out something
+
+      <section id="products" class="products">
         <h1>Our Products</h1>
         <div class="product-items">
           <div class="item">
@@ -158,10 +197,13 @@
         </div>
       </section>-->
 
+      <!-- Divider -->
+
       <div class="h-divider">
         <div class="shadow"></div>
       </div>
 
+      <!-- Contact Section -->
 
       <section class="contact">
         <h1 id="contact">Contact us</h1>
@@ -180,26 +222,58 @@
         </div>
       </section>
 
+      <!-- Back to top button -->
+
       <a id="btn" class="bck-top" href="#"></a>
+
+      <!-- Footer -->
 
       <footer>
         <p>by Brezitski</p>
       </footer>
 
     </div>
+
+
+    <script type="text/javascript">
+
+      //Shows back to top button after 20px
+  
+      var mybutton = document.getElementById("btn");
+  
+      window.onscroll = function() {scrollFunction()};
+  
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+  
+      //Enables the navigation menu when you press the hamburger button.
+      //Took it from W3Schools and re-wrote it myself.
+  
+      function toggle() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+  
+      //Used same code as before but added a different fuction Name
+      //It toggles the menu off when you click a link button
+  
+      function toggleOff() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
-
-  <script type="text/javascript">
-    var mybutton = document.getElementById("btn");
-
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-    }
-  </script>
 </html>
