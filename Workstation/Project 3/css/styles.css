@@ -145,8 +145,7 @@ section {
 }
 
 .image img {
-  width: 56.25rem;
-  height: 37.5rem;
+  width: 100%;
   margin-right: 25rem;
 }
 
@@ -157,6 +156,7 @@ section {
 }
 
 .info h1 {
+  font-size: 2em;
   letter-spacing: 1.5px;
 }
 
@@ -547,15 +547,15 @@ footer p {
     align-items: center;
   }
 
-  .sec-1 .image {
-
+  .sec-1 .image img{
+    margin: 0 auto;
   }
 
-  section .desktop {
+  .sec-1 .desktop {
     display: none;
   }
 
-  section .mobile {
+  .sec-1 .mobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -563,7 +563,7 @@ footer p {
     height: 300px;
   }
 
-  section .info {
+  .sec-1 .info {
     margin-top: 50px;
     width: auto;
     text-align: center;
@@ -612,12 +612,9 @@ footer p {
 
 @media screen and (max-width: 480) {
 
-  section .mobile {
-    display: block;
-    max-width: 300px;
-    max-height: 300px;
-    padding-right: 50px;
-    margin: 0 auto;
+  .sec-1 .mobile {
+    width: 150px;
+    height: 150px;
   }
 
 }
