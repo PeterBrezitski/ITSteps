@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/cd4ea4c640.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Title -->
+    <title>Moderna</title>
+
+</head>
+<body>
+
+    <header class="fixed-top">
+        <nav class="desktop">
+            <div class="desktop-logo">
+                <a href="#">Moderna</a>
+            </div>
+            <div class="desktop-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Drop Down</a></li>
+                    <li><a href="">Contact Us</a></li>                    
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="mobile">
+            <div class="mobile-images">
+                <div class="mobile-logo">
+                  <a href="#">Moderna</a>
+                </div>
+                <div class="mobile-icon">
+                  <button class="menu" onclick="toggle(); this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg width="32" height="32" viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <ul class="mobile-menu" id="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact Us</a></li>
+              <ul>
+        </nav>
+    </header>
+    
+    <section class="main">
+        <div class="info">
+            <h1>Welcome to Moderna</h1>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. 
+                Sequi ea ut et est quaerat sequi nihil ut aliquam. 
+                Occaecati alias dolorem mollitia ut. 
+                Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. 
+                Minus et tempore modi architecto.
+            </p>
+            <button class="main-btn">Read More</button>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards-container">
+            <div class="card">
+                <i class="fa-brands fa-dribbble fa-2xl pink"></i>
+                <h3>Lorem Ipsum</h3>
+                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-file-lines fa-2xl aqua"></i>
+                <h3>Sed ut perspiciatis</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-gauge-high fa-2xl green"></i>
+                <h3>Magni Dolores</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="card">
+                <i class="fa-sharp fa-solid fa-earth-americas fa-2xl blue"></i>
+                <h3>Nemo Enim</h3>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="video-container">
+            <img src="assets/why-us.jpg" alt="Two girls talking.">
+            <div class="col">
+                <div class="row">
+                    <div class="image">
+                        <i class="fa-solid fa-fingerprint fa-xl"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image">
+                        <i class="fa-solid fa-gift fa-xl"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Nemo Enim</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-container">
+            <h1>Features</h1>
+            <img src="" alt="">
+            <p>Magnam dolores commodi suscipit. 
+                Necessitatibus eius consequatur ex aliquid fuga 
+                eum quidem. Sit sint consectetur velit. Quisquam 
+                quos quisquam cupiditate. Et nemo qui impedit suscipit 
+                alias ea. Quia fugiat sit in iste officiis commodi 
+                quidem hic quas.
+            </p>
+            <div class="row">
+                <img src="assets/features-1.svg" alt="">
+                <div>
+                    <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row-reverse">
+                <div>
+                    <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    </ul>
+                </div>
+                <img src="assets/features-2.svg" alt="">
+            </div>
+            <div class="row">
+                <img src="assets/features-3.svg" alt="">
+                <div>
+                    <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row-reverse">
+                <div>
+                    <h2>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                    </ul>
+                </div>
+                <img src="assets/features-4.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Our Newsletter</h2>
+        <div class="subscribe">
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <input type="text">
+        </div>
+    </section>
+
+    <section class="useful">
+        <div class="links">
+            <h4>Useful Links</h4>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">About us</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">Services</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">Terms of service</a>
+                </li>
+                <li><i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">Privacy policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Our Services</h4>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">Web Design</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">Web Development</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">Product Management</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">Marketing</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right fa-2xs"></i>
+                    <a href="">Graphic Design</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h4>Contact Us</h4>
+            <p class="address">
+                A108 Adam Street <br>
+                New York, NY 535022 <br>
+                United States 
+            </p>
+            <p><strong>Phone: </strong>+1 5589 55488 55</p>
+            <p><strong>Email: </strong>info@example.com</p>
+        </div>
+        <div class="about-moderna">
+            <h4>About Moderna</h4>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. 
+                Justo eget nada terra videa magna derita valies 
+                darta donna mare fermentum iaculis eu non diam 
+                phasellus.
+            </p>
+            <div class="social">
+                <a href=""><img src="assets/twitter.png" alt="Twitter"></a>
+                <a href=""><img src="assets/facebook.png" alt="Facebook"></a>
+                <a href=""><img src="assets/instagram.png" alt="Instagram"></a>
+                <a href=""><img src="assets/linkedin.png" alt="Linked In"></a>
+            </div>
+        </div>
+    </section>
+
+    <a id="btn" class="scroll-top" href="#">
+        <i class="fa-solid fa-arrow-up fa-sm"></i>
+    </a>
+
+    <footer>
+        <div class="cpr">
+            <p>&copy; Copyright <strong>Moderna</strong>. All Rights Reserved</p>
+            <p class="design">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+        </div>
+    </footer>
+
+
+    <script>
+
+      //Shows back to top button after 20px
+  
+      var mybutton = document.getElementById("btn");
+  
+      window.onscroll = function() {scrollFunction()};
+  
+      function scrollFunction() {
+        
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      $(function() {
+        var header = $(".fixed-top");
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+    
+        if (scroll >= 60) {
+            header.removeClass('fixed-top').addClass("fixed-top-alt");
+        } else {
+            header.removeClass("fixed-top-alt").addClass('fixed-top');
+        }
+     });
+    });
+  
+      //Enables the navigation menu when you press the hamburger button.
+      //Took it from W3Schools and re-wrote it myself.
+  
+      function toggle() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+  
+      //Used same code as before but added a different fuction Name
+      //It toggles the menu off when you click a link button
+  
+      function toggleOff() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+    </script>
+
+</body>
+</html>

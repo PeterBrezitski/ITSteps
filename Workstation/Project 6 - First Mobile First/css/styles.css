@@ -1,0 +1,449 @@
+/* -- Variables -- */
+
+:root {
+  --primary: #111111;
+  scroll-behavior: smooth;
+}
+
+/* -- Global Styles -- */
+
+body, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+}
+
+.main-btn {
+  color: white;
+  background: none;
+  border: 2px solid #68A4C4;
+  border-radius: 30px;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+.main-btn:hover {
+  background-color: #68A4C4;
+  cursor: pointer;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  z-index: 999;
+}
+
+.fixed-top-alt {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  background-color: rgba(30, 67, 86, 0.8);
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  z-index: 999;
+}
+
+/* Hamburger Icon */
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+
+/*  -- Mobile -- */
+
+
+/* Header */
+
+header .desktop {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 78%;
+}
+
+header .desktop-logo {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header .desktop ul li{
+  display: inline-block;
+  padding: 10px 0 10px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+header .desktop a:visited {
+  color: White;
+}
+
+header .mobile {
+  margin: 0 auto;
+  width: 95%;
+}
+
+header .mobile-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .mobile-logo a{
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+}
+
+header .mobile-logo a:visited {
+  color: white;
+}
+
+header .mobile-icon {
+  padding: 0;
+  margin: 0;
+}
+
+header .mobile-menu {
+  text-align: center;
+  display: none;
+  margin-top: 20px;
+    
+}
+
+/* Main Section */
+
+.main {
+  background: 
+  linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../assets/hero-bg.jpg ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-color: rgb(104, 164, 196, 0.5);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.main .info {
+  width: 85%;
+}
+
+.main .info h1 {
+  font-size: clamp(2rem, 3vw, 4rem); 
+}
+
+.main .info p {
+  letter-spacing: 0.5px;
+}
+
+.main .info .main-btn {
+  margin-top: 60px;
+}
+
+/* Cards Section */
+
+.cards {
+  margin-top: 20%;
+  padding-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.card {
+  box-shadow: 0 5px 26px 0 rgba(68, 88, 144, 0.14);
+  padding: 40px;
+  margin: 20px 10px 20px 10px;
+}
+
+.card i {
+  padding: 35px 20px;
+  border-radius: 50%;
+}
+
+.card .pink {
+  background-color: #FCEEF3;
+  color: #FF689B;
+}
+
+.card .aqua {
+  background-color: #E6FDFC;
+  color: #3FCDC7;
+  padding: 35px 24px;
+}
+
+.card .green {
+  background-color: #EAFDE7;
+  color: #41CF2E;
+}
+
+.card .blue {
+  background-color: #E1EEFF;
+  color: #2282FF;
+}
+
+/* Video Section */
+
+.video {
+  background-color: #F3F8FA;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container {
+  background-color: white;
+  margin: 0 20px;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container img {
+  width: auto;
+  height: 320px;
+}
+
+.video-container .col {
+  width: 66%;
+  padding: 40px;
+}
+
+.video-container .row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.video-container .row .image i {
+  background-color: #F3F8FA;
+  padding: 32px 25px;
+  margin-right: 20px;
+}
+
+
+/* Scroll to Top */
+
+.scroll-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #68A4C4;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex !important;
+  justify-content: center;
+  align-items: center; 
+}
+
+.scroll-top:visited {
+  color: white;
+}
+
+/* Useful Links */
+
+.useful {
+  background-color: #0D2735;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 0 30px 0;
+  gap: 10%;
+}
+
+.useful h4 {
+  font-size: 18px;
+  color: #a2cce3;
+  font-weight: 600;
+}
+
+.useful .links li {
+  padding: 10px 0;
+}
+
+.useful .links i {
+  margin-right: 5px;
+  color: #a2cce3;
+}
+
+.useful .links a:visited{
+  color: white;
+  
+}
+
+.useful .about-moderna {
+
+}
+
+
+/* Footer */
+
+.cpr {
+  background-color: #0B212D;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+.cpr .design {
+  padding-top: 10px;;
+  font-size: 14px;
+}
+
+.cpr a {
+  color: #a2cce3;
+}
+
+
+/* -- Small Tablets -- */
+
+@media screen and (min-width: 620px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+}
+
+/* -- large Tablets and Laptops -- */
+
+@media screen and (min-width: 960px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 77%;
+    padding-bottom: 50px;
+    }
+
+  .card {
+    padding: 35px;
+  }
+}
+
+/* -- Desktop Styles -- */
+
+@media screen and (min-width: 1200px) {
+  header .mobile {
+    display: none;
+  }
+
+  header .desktop {
+    display: flex;
+  }
+
+  .main {
+    height: 90vh;
+  }
+
+  .main p {
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 77%;
+    }
+
+  .card {
+    padding: 35px;
+  }
+
+  .video-container {
+    flex-direction: row;
+  }
+}

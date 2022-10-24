@@ -183,7 +183,7 @@ section {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
   
   .logo img{
     width: 70px;
@@ -195,12 +195,6 @@ section {
   }
 
   section {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .sec-info {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -228,4 +222,19 @@ section {
     padding: 0;
   }
 
+  .info ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .items li {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .items li h1, img {
+    padding-bottom: 20px;
+  }
 }

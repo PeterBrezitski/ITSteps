@@ -250,6 +250,18 @@
           mybutton.style.display = "none";
         }
       }
+
+      $(function() {
+      var header = $(".mobile");
+      $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+       if (scroll >= 200) {
+         header.removeClass('header').addClass("header-alt");
+        } else {
+            header.removeClass("header-alt").addClass('header');
+        }
+    });
+  });
   
       //Enables the navigation menu when you press the hamburger button.
       //Took it from W3Schools and re-wrote it myself.
